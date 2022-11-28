@@ -40,5 +40,9 @@
     <PackageReference Include="SonarAnalyzer.CSharp" Version="$(SonarAnalyzerVersion)" PrivateAssets="All" />
     <PackageReference Include="StyleCop.Analyzers" Version="$(StyleCopVersion)" PrivateAssets="All" />
     <!--<PackageReference Include="Nerdbank.GitVersioning" Version="$(NerdbankGitVersioningVersion)" PrivateAssets="All" />-->
+    <PackageReference Include="MinVer" Version="4.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
