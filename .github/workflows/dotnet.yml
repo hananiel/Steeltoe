@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore src/Steeltoe.All.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal src/Steeltoe.All.sln
+      run: dotnet test --no-build --verbosity normal src/Steeltoe.Common.slnf
