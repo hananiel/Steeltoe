@@ -11,6 +11,7 @@ override Steeltoe.Management.Endpoint.Metrics.MetricSample.ToString() -> string!
 override Steeltoe.Management.Endpoint.Metrics.MetricsEndpointOptions.RequiresExactMatch() -> bool
 override Steeltoe.Management.Endpoint.Refresh.RefreshEndpointOptions.AllowedVerbs.get -> System.Collections.Generic.IList<string!>!
 override Steeltoe.Management.Endpoint.Refresh.RefreshEndpointOptions.AllowedVerbs.set -> void
+override Steeltoe.Management.Endpoint.Services.ServicesEndpointMiddleware.InvokeEndpointHandlerAsync(Microsoft.AspNetCore.Http.HttpContext! context, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<Steeltoe.Management.Endpoint.Services.ServiceContextDescriptor!>!
 static Steeltoe.Management.Endpoint.ActuatorRouteBuilderExtensions.MapAllActuators(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! builder) -> Microsoft.AspNetCore.Builder.IEndpointConventionBuilder!
 static Steeltoe.Management.Endpoint.ActuatorRouteBuilderExtensions.MapAllActuators(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! routeBuilder, Steeltoe.Management.Endpoint.ActuatorConventionBuilder? conventionBuilder) -> Microsoft.AspNetCore.Builder.IEndpointConventionBuilder!
 static Steeltoe.Management.Endpoint.ActuatorRouteBuilderExtensions.MapAllActuators(this Microsoft.AspNetCore.Routing.IRouteBuilder! builder) -> Microsoft.AspNetCore.Routing.IRouteBuilder!
@@ -392,6 +393,11 @@ Steeltoe.Management.Endpoint.Security.EndpointClaim.Type.get -> string?
 Steeltoe.Management.Endpoint.Security.EndpointClaim.Type.set -> void
 Steeltoe.Management.Endpoint.Security.EndpointClaim.Value.get -> string?
 Steeltoe.Management.Endpoint.Security.EndpointClaim.Value.set -> void
+Steeltoe.Management.Endpoint.Services.IServicesEndpointHandler
+Steeltoe.Management.Endpoint.Services.ServicesEndpointMiddleware
+Steeltoe.Management.Endpoint.Services.ServicesEndpointMiddleware.ServicesEndpointMiddleware(Steeltoe.Management.Endpoint.Services.IServicesEndpointHandler! endpointHandler, Microsoft.Extensions.Options.IOptionsMonitor<Steeltoe.Management.Endpoint.Options.ManagementOptions!>! managementOptions, Microsoft.Extensions.Logging.ILoggerFactory! logger) -> void
+Steeltoe.Management.Endpoint.Services.ServicesEndpointOptions
+Steeltoe.Management.Endpoint.Services.ServicesEndpointOptions.ServicesEndpointOptions() -> void
 Steeltoe.Management.Endpoint.SpringBootAdminClient.ServiceCollectionExtensions
 Steeltoe.Management.Endpoint.SpringBootAdminClient.SpringBootAdminClientOptions
 Steeltoe.Management.Endpoint.SpringBootAdminClient.SpringBootAdminClientOptions.ApplicationName.get -> string?
